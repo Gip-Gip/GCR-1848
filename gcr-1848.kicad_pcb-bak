@@ -3,16 +3,22 @@
   (general
     (links 25)
     (no_connects 1)
-    (area 15.164999 25.324999 86.435001 38.175001)
+    (area 15.164999 23.736 86.435001 39.864)
     (thickness 1.6)
-    (drawings 33)
+    (drawings 45)
     (tracks 46)
     (zones 0)
     (modules 28)
     (nets 8)
   )
 
-  (page A4)
+  (page USLetter)
+  (title_block
+    (title GCR-1848)
+    (date 2018-07-14)
+    (comment 1 "By Charles Thompson")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -64,7 +70,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x010f0_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -79,15 +85,15 @@
       (psnegative false)
       (psa4output false)
       (plotreference true)
-      (plotvalue true)
+      (plotvalue false)
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory gcr-1848/))
   )
 
   (net 0 "")
@@ -115,7 +121,7 @@
     (add_net "Net-(D2-Pad1)")
   )
 
-  (module gcr-1848:0.25in_hole locked (layer F.Cu) (tedit 5B481ADA) (tstamp 5B480690)
+  (module gcr-1848:0.25in_hole (layer F.Cu) (tedit 5B481ADA) (tstamp 5B480690)
     (at 50.8 31.75)
     (fp_text reference "" (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -126,7 +132,7 @@
     (pad ~ thru_hole circle (at 0 0) (size 6.5 6.5) (drill 6.35) (layers *.Cu))
   )
 
-  (module Capacitors_SMD:C_2220 (layer F.Cu) (tedit 5B49085C) (tstamp 5B47FECE)
+  (module Capacitors_SMD:C_2220 locked (layer F.Cu) (tedit 5B49085C) (tstamp 5B47FECE)
     (at 40.005 31.75 270)
     (descr "Capacitor SMD 2220, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 2220")
@@ -159,7 +165,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 5B4909F8) (tstamp 5B47FEBE)
+  (module Capacitors_SMD:C_0805 locked (layer F.Cu) (tedit 5B4909F8) (tstamp 5B47FEBE)
     (at 58.42 34.29)
     (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0805")
@@ -192,7 +198,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_2220 (layer F.Cu) (tedit 5B490860) (tstamp 5B47FEDE)
+  (module Capacitors_SMD:C_2220 locked (layer F.Cu) (tedit 5B490860) (tstamp 5B47FEDE)
     (at 32.385 31.75 90)
     (descr "Capacitor SMD 2220, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 2220")
@@ -225,7 +231,7 @@
     )
   )
 
-  (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5B49088A) (tstamp 5B47FEF5)
+  (module Diodes_SMD:SOD-123 locked (layer F.Cu) (tedit 5B49088A) (tstamp 5B47FEF5)
     (at 45.72 32.02 90)
     (descr SOD-123)
     (tags SOD-123)
@@ -265,7 +271,7 @@
     )
   )
 
-  (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5B490B12) (tstamp 5B47FF0C)
+  (module Diodes_SMD:SOD-123 locked (layer F.Cu) (tedit 5B490B12) (tstamp 5B47FF0C)
     (at 64.135 34.29 180)
     (descr SOD-123)
     (tags SOD-123)
@@ -305,7 +311,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 5B48269D) (tstamp 5B47FF1C)
+  (module Resistors_SMD:R_0805 locked (layer F.Cu) (tedit 5B48269D) (tstamp 5B47FF1C)
     (at 41.275 36.83 180)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
@@ -338,7 +344,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 5B4908E4) (tstamp 5B47FF2C)
+  (module Resistors_SMD:R_0805 locked (layer F.Cu) (tedit 5B4908E4) (tstamp 5B47FF2C)
     (at 33.655 36.83 180)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
@@ -371,7 +377,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 5B490B6A) (tstamp 5B47FF3C)
+  (module Resistors_SMD:R_0805 locked (layer F.Cu) (tedit 5B490B6A) (tstamp 5B47FF3C)
     (at 65.405 30.48)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
@@ -404,7 +410,7 @@
     )
   )
 
-  (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 5B490B72) (tstamp 5B47FF4C)
+  (module Resistors_SMD:R_0805 locked (layer F.Cu) (tedit 5B490B72) (tstamp 5B47FF4C)
     (at 65.405 28.575 180)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
@@ -437,7 +443,7 @@
     )
   )
 
-  (module gcr-1848:crbitmap (layer F.Cu) (tedit 5B4819F5) (tstamp 5B4819E5)
+  (module gcr-1848:crbitmap locked (layer F.Cu) (tedit 5B4819F5) (tstamp 5B4819E5)
     (at 63.5 36.195)
     (fp_text reference "" (at 0 0) (layer F.SilkS) hide
       (effects (font (thickness 0.3)))
@@ -698,7 +704,7 @@
       (xy 2.590645 -0.483305) (xy 2.639902 -0.49189) (xy 2.685282 -0.47099)) (layer F.SilkS) (width 0.01))
   )
 
-  (module Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm (layer F.Cu) (tedit 5B490991) (tstamp 5B490C0E)
+  (module Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm locked (layer F.Cu) (tedit 5B490991) (tstamp 5B490C0E)
     (at 58.42 30.48 180)
     (descr "8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "SOIC 1.27")
@@ -747,7 +753,7 @@
     )
   )
 
-  (module gcr-1848:via (layer F.Cu) (tedit 5B490E64) (tstamp 5B491356)
+  (module gcr-1848:via locked (layer F.Cu) (tedit 5B490E64) (tstamp 5B491356)
     (at 60.96 34.29)
     (fp_text reference "" (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -759,7 +765,7 @@
       (net 2 Earth))
   )
 
-  (module gcr-1848:via (layer F.Cu) (tedit 5B49102A) (tstamp 5B491399)
+  (module gcr-1848:via locked (layer F.Cu) (tedit 5B49102A) (tstamp 5B491399)
     (at 40.005 31.75)
     (fp_text reference "" (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -771,7 +777,7 @@
       (net 2 Earth))
   )
 
-  (module gcr-1848:via (layer F.Cu) (tedit 5B4929E3) (tstamp 5B4929C4)
+  (module gcr-1848:via locked (layer F.Cu) (tedit 5B4929E3) (tstamp 5B4929C4)
     (at 58.42 29.21)
     (fp_text reference "" (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -783,7 +789,7 @@
       (net 2 Earth))
   )
 
-  (module gcr-1848:crbitmap (layer F.Cu) (tedit 5B4930E2) (tstamp 5B493121)
+  (module gcr-1848:crbitmap locked (layer F.Cu) (tedit 5B4930E2) (tstamp 5B493121)
     (at 37.465 27.305 180)
     (fp_text reference "" (at 0 0 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3)))
@@ -1044,7 +1050,7 @@
       (xy 2.590645 -0.483305) (xy 2.639902 -0.49189) (xy 2.685282 -0.47099)) (layer F.SilkS) (width 0.01))
   )
 
-  (module gcr-1848:wirepad (layer F.Cu) (tedit 5B4933FA) (tstamp 5B493A56)
+  (module gcr-1848:wirepad locked (layer F.Cu) (tedit 5B4933FA) (tstamp 5B493A56)
     (at 74.93 31.75)
     (fp_text reference "" (at 0 0.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1056,7 +1062,7 @@
       (net 7 "Net-(C4-Pad1)"))
   )
 
-  (module gcr-1848:wirepad (layer F.Cu) (tedit 5B4933C5) (tstamp 5B493A61)
+  (module gcr-1848:wirepad locked (layer F.Cu) (tedit 5B4933C5) (tstamp 5B493A61)
     (at 84.455 31.75)
     (fp_text reference "" (at 0 0.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1067,7 +1073,7 @@
     (pad 1 smd circle (at 0 0 180) (size 2 2) (layers F.Cu F.Paste F.Mask))
   )
 
-  (module gcr-1848:wirepad (layer F.Cu) (tedit 5B4933C5) (tstamp 5B493A66)
+  (module gcr-1848:wirepad locked (layer F.Cu) (tedit 5B4933C5) (tstamp 5B493A66)
     (at 26.67 31.75)
     (fp_text reference "" (at 0 0.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1078,7 +1084,7 @@
     (pad 1 smd circle (at 0 0 180) (size 2 2) (layers F.Cu F.Paste F.Mask))
   )
 
-  (module gcr-1848:wirepad (layer F.Cu) (tedit 5B4933C5) (tstamp 5B4A4FB3)
+  (module gcr-1848:wirepad locked (layer F.Cu) (tedit 5B4933C5) (tstamp 5B4A4FB3)
     (at 17.78 31.75)
     (fp_text reference "" (at 0 0.5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1089,7 +1095,7 @@
     (pad 1 smd circle (at 0 0 180) (size 2 2) (layers F.Cu F.Paste F.Mask))
   )
 
-  (module gcr-1848:#2_hole (layer F.Cu) (tedit 5B4A50E2) (tstamp 5B4A5095)
+  (module gcr-1848:#2_hole locked (layer F.Cu) (tedit 5B4A50E2) (tstamp 5B4A5095)
     (at 17.145 27.305)
     (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1101,7 +1107,7 @@
       (net 4 "Net-(C2-Pad2)"))
   )
 
-  (module gcr-1848:#2_hole (layer F.Cu) (tedit 5B4A50C8) (tstamp 5B4A50BD)
+  (module gcr-1848:#2_hole locked (layer F.Cu) (tedit 5B4A50C8) (tstamp 5B4A50BD)
     (at 17.145 36.195)
     (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1113,7 +1119,7 @@
       (net 5 "Net-(C3-Pad1)"))
   )
 
-  (module gcr-1848:#2_hole (layer F.Cu) (tedit 5B4A510D) (tstamp 5B4A5105)
+  (module gcr-1848:#2_hole locked (layer F.Cu) (tedit 5B4A510D) (tstamp 5B4A5105)
     (at 27.305 36.195)
     (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1125,7 +1131,7 @@
       (net 2 Earth))
   )
 
-  (module gcr-1848:#2_hole (layer F.Cu) (tedit 5B4A5183) (tstamp 5B4A5178)
+  (module gcr-1848:#2_hole locked (layer F.Cu) (tedit 5B4A5183) (tstamp 5B4A5178)
     (at 27.305 27.305)
     (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1137,7 +1143,7 @@
       (net 2 Earth))
   )
 
-  (module gcr-1848:#2_hole (layer F.Cu) (tedit 5B4A5076) (tstamp 5B4A51AC)
+  (module gcr-1848:#2_hole locked (layer F.Cu) (tedit 5B4A5076) (tstamp 5B4A51AC)
     (at 74.295 27.305)
     (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1148,7 +1154,7 @@
     (pad ~ thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.184) (layers *.Cu *.Mask))
   )
 
-  (module gcr-1848:#2_hole (layer F.Cu) (tedit 5B4A5076) (tstamp 5B4A51B1)
+  (module gcr-1848:#2_hole locked (layer F.Cu) (tedit 5B4A5076) (tstamp 5B4A51B1)
     (at 74.295 36.195)
     (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1159,7 +1165,7 @@
     (pad ~ thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.184) (layers *.Cu *.Mask))
   )
 
-  (module gcr-1848:#2_hole (layer F.Cu) (tedit 5B4A5076) (tstamp 5B4A51B6)
+  (module gcr-1848:#2_hole locked (layer F.Cu) (tedit 5B4A5076) (tstamp 5B4A51B6)
     (at 84.455 27.305)
     (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1170,7 +1176,7 @@
     (pad ~ thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.184) (layers *.Cu *.Mask))
   )
 
-  (module gcr-1848:#2_hole (layer F.Cu) (tedit 5B4A5076) (tstamp 5B4A51BB)
+  (module gcr-1848:#2_hole locked (layer F.Cu) (tedit 5B4A5076) (tstamp 5B4A51BB)
     (at 84.455 36.195)
     (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1181,6 +1187,20 @@
     (pad ~ thru_hole circle (at 0 0) (size 2.5 2.5) (drill 2.184) (layers *.Cu *.Mask))
   )
 
+  (gr_line (start 88.9 38.1) (end 86.36 38.1) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 88.9 35.56) (end 88.9 38.1) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 86.36 35.56) (end 88.9 35.56) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 86.36 27.94) (end 86.36 35.56) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 88.9 27.94) (end 86.36 27.94) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 88.9 25.4) (end 88.9 27.94) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 86.36 25.4) (end 88.9 25.4) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 12.7 38.1) (end 15.24 38.1) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 12.7 35.56) (end 12.7 38.1) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 15.24 35.56) (end 12.7 35.56) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 15.24 27.94) (end 15.24 35.56) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 12.7 27.94) (end 15.24 27.94) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 12.7 25.4) (end 12.7 27.94) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 15.24 25.4) (end 12.7 25.4) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 73.66 28.575) (end 67.31 28.575) (layer F.SilkS) (width 0.127))
   (gr_line (start 76.2 28.575) (end 74.93 28.575) (layer F.SilkS) (width 0.127))
   (gr_line (start 54.61 34.925) (end 52.07 34.925) (layer F.SilkS) (width 0.127))
@@ -1195,10 +1215,8 @@
   (gr_line (start 36.83 34.925) (end 35.56 34.925) (layer F.SilkS) (width 0.127))
   (gr_line (start 49.53 34.925) (end 43.18 34.925) (layer F.SilkS) (width 0.127))
   (gr_line (start 15.24 38.1) (end 19.05 38.1) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 15.24 25.4) (end 15.24 38.1) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 19.05 25.4) (end 15.24 25.4) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 86.36 38.1) (end 82.55 38.1) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 86.36 25.4) (end 86.36 38.1) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 82.55 25.4) (end 86.36 25.4) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 19.05 38.1) (end 19.05 34.925) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 19.05 28.575) (end 19.05 25.4) (layer Edge.Cuts) (width 0.15))
